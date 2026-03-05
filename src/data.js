@@ -1,6 +1,6 @@
 export const DEFAULT_DATA = [
   { leadSource: "Content Syndication", color: "#E8F4FD", accent: "#5BA4CF", details: ["Demand Science", "StackAdapt"] },
-  { leadSource: "Event", color: "#E8FAF0", accent: "#4CAF82", details: ["Tradeshow", "Webinar"] },
+  { leadSource: "Event", color: "#E8FAF0", accent: "#4CAF82", details: ["Tradeshow", "Webinar", "In-Person*", "Virtual*"] },
   { leadSource: "Organic Search", color: "#FEF9E7", accent: "#D4AC0D", details: ["Google", "Bing", "Reddit"] },
   { leadSource: "Paid Search", color: "#FDF2FB", accent: "#C471B5", details: ["Google", "Bing"] },
   { leadSource: "Paid Social", color: "#EEF2FF", accent: "#6674CC", details: ["LinkedIn", "Facebook", "Instagram"] },
