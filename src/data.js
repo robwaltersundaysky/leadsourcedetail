@@ -33,8 +33,8 @@ export const DEFAULT_DATA = [
     leadSource: "Prospecting",
     color: "#FFF3E8",
     accent: "#E8884A",
-    details: ["BDR", "Sales", "DemandZen", "Target Account"],
-    note: "Lead Source Detail separates Marketing outbound (BDR, DemandZen) from Sales outbound (Sales)",
+    details: ["BDR", "Sales*", "DemandZen", "Target Account"],
+    note: "Lead Source Detail separates Marketing outbound (BDR, DemandZen) from Sales outbound (Sales). * = New value",
   },
   {
     leadSource: "Referral",
