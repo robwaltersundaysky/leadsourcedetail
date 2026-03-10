@@ -92,6 +92,7 @@ export default function App() {
   const [newSourceName, setNewSourceName] = useState("");
   const [newSourcePalette, setNewSourcePalette] = useState(0);
   const [savedFlash, setSavedFlash] = useState(false);
+  const [zoom, setZoom] = useState(1);
   const saveTimeout = useRef(null);
 
   useEffect(() => {
@@ -153,7 +154,19 @@ export default function App() {
   const font = "'Helvetica Neue', Arial, sans-serif";
 
   return (
-    <div style={{ minHeight: "100vh", background: "#F7F6F3", padding: "32px 28px", fontFamily: font }}>
+    <div style={{ minHeight: "100vh", background: "#F7F6F3", fontFamily: font }}>
+      {/* Zoom control bar */}
+      <div style={{ position: "sticky", top: 0, zIndex: 100, background: "#F7F6F3", borderBottom: "1px solid #e8e8e8", padding: "8px 28px", display: "flex", alignItems: "center", gap: 12 }}>
+        <span style={{ fontSize: 11, color: "#888", fontFamily: font, fontWeight: 600, whiteSpace: "nowrap" }}>Zoom</span>
+        <input
+          type="range" min="0.7" max="2" step="0.05" value={zoom}
+          onChange={(e) => setZoom(parseFloat(e.target.value))}
+          style={{ width: 140, accentColor: "#5BA4CF", cursor: "pointer" }}
+        />
+        <span style={{ fontSize: 11, color: "#888", fontFamily: font, width: 36 }}>{Math.round(zoom * 100)}%</span>
+        <button onClick={() => setZoom(1)} style={{ fontSize: 10, color: "#aaa", background: "none", border: "1px solid #ddd", borderRadius: 5, padding: "2px 8px", cursor: "pointer", fontFamily: font }}>Reset</button>
+      </div>
+      <div style={{ padding: "32px 28px", transformOrigin: "top left", transform: "scale(" + zoom + ")", width: "calc(100% / " + zoom + ")" }}>
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 28 }}>
         <div>
@@ -336,6 +349,7 @@ export default function App() {
           <span style={{ background: "#FFF3E8", border: "1px solid #E8884A", borderRadius: 10, padding: "1px 7px", color: "#C45F0A", fontWeight: 600 }}>*</span>
           {" "}New value — not yet in Salesforce picklist
         </p>
+      </div>
       </div>
     </div>
   );
