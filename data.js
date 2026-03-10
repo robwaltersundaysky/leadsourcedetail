@@ -11,7 +11,7 @@ export const DEFAULT_DATA = [
   },
   {
     leadSource: "Referral", color: "#F3EEF8", accent: "#9B6DC5",
-    details: ["Partner", "Customer", "Word of Mouth", "Employee", "Executive: Marc Zionts", "Board of Directors", "SundaySky Board of Advisors"],
+    details: ["Partner", "Customer", "Word of Mouth", "Employee", "Board of Directors", "SundaySky Board of Advisors"],
   },
   { leadSource: "Social Media", color: "#FFF0F3", accent: "#E05C7A", details: ["LinkedIn", "Facebook", "Instagram", "Reddit", "X/Twitter"] },
   { leadSource: "Website - Direct", color: "#F0FAF0", accent: "#5BAD6F", details: ["Intent", "GTM Buddy"] },
@@ -23,7 +23,7 @@ export const DEFAULT_DATA = [
 ];
 
 export const DEFAULT_RETIRED = [
-  "RightBound", "LinkedIn Mining", "LinkedIn Sales Navigator",
+  "RightBound", "LinkedIn Mining", "LinkedIn Sales Navigator", "Executive: Marc Zionts",
   "Advisor: David Edelman", "Former Customer", "Customer: Unknown",
   "Prospecting (as detail)", "Prospecting - Other", "ZoomInfo",
 ];
