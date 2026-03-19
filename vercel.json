@@ -2,8 +2,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "framework": "create-react-app",
-  "routes": [
-    { "src": "/checklist.html", "dest": "/checklist.html" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/((?!checklist.html).*)", "destination": "/index.html" }
   ]
 }
