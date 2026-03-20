@@ -18,11 +18,11 @@ export const DEFAULT_DATA = [
   { leadSource: "Partner", color: "#E8F0FE", accent: "#4A7FE8", details: ["Partner: Agency", "Partner: Allied Solutions", "Partner: Other"] },
   { leadSource: "Display Advertising", color: "#FFF0E8", accent: "#E87850", details: ["Programmatic", "CTV - QR Code*"] },
   { leadSource: "Intent", color: "#F0FBF8", accent: "#3AAC8A", details: ["RB2B"] },
-  { leadSource: "Third-Party Data", color: "#F0FAF0", accent: "#5BAD6F", details: ["ZoomInfo", "SalesIntel"] },
+  { leadSource: "Third-Party Data", color: "#F0FAF0", accent: "#5BAD6F", details: ["ZoomInfo", "SalesIntel", "RightBound*", "LinkedIn*"] },
 ];
 
 export const DEFAULT_RETIRED = [
-  "RightBound", "LinkedIn Mining", "LinkedIn Sales Navigator", "Executive: Marc Zionts",
+  "Executive: Marc Zionts",
   "Advisor: David Edelman", "Former Customer", "Customer: Unknown",
   "Prospecting (as detail)", "Prospecting - Other",
 ];

@@ -22,11 +22,11 @@ const DEFAULT_DATA = [
   { leadSource: "Partner", color: "#E8F0FE", accent: "#4A7FE8", details: ["Partner: Agency", "Partner: Allied Solutions", "Partner: Other"] },
   { leadSource: "Display Advertising", color: "#FFF0E8", accent: "#E87850", details: ["Programmatic", "CTV - QR Code*"] },
   { leadSource: "Intent", color: "#F0FBF8", accent: "#3AAC8A", details: ["RB2B"] },
-  { leadSource: "Third-Party Data", color: "#F0FAF0", accent: "#5BAD6F", details: ["ZoomInfo", "SalesIntel"] },
+  { leadSource: "Third-Party Data", color: "#F0FAF0", accent: "#5BAD6F", details: ["ZoomInfo", "SalesIntel", "RightBound*", "LinkedIn*"] },
 ];
 
 const DEFAULT_RETIRED = [
-  "RightBound", "LinkedIn Mining", "LinkedIn Sales Navigator", "Executive: Marc Zionts",
+  "Executive: Marc Zionts",
   "Advisor: David Edelman", "Former Customer", "Customer: Unknown",
   "Prospecting (as detail)", "Prospecting - Other", "ZoomInfo",
 ];
@@ -62,10 +62,9 @@ const PHASES = [
       { id: "p1-10", label: "Add new Lead Source: Display Advertising (with values: Programmatic, CTV - QR Code)", tag: "new" },
       { id: "p1-11", label: "Add new Lead Source: Intent (with value: RB2B)", tag: "new" },
       { id: "p1-12", label: "Add new Lead Source: Third-Party Data (with values: ZoomInfo, SalesIntel)", tag: "new" },
-      { id: "p1-13", label: "Confirm X/Twitter is live ✓ (already done)" },
-      { id: "p1-14", label: "Deactivate (do NOT delete): RightBound" },
-      { id: "p1-15", label: "Deactivate (do NOT delete): LinkedIn Mining" },
-      { id: "p1-16", label: "Deactivate (do NOT delete): LinkedIn Sales Navigator" },
+      { id: "p1-13", label: "Add new picklist value: RightBound (under Third-Party Data)", tag: "new" },
+      { id: "p1-13b", label: "Add new picklist value: LinkedIn (under Third-Party Data)", tag: "new" },
+      { id: "p1-13c", label: "Confirm X/Twitter is live ✓ (already done)" },
       { id: "p1-17", label: "Deactivate (do NOT delete): Executive: Marc Zionts" },
       { id: "p1-18", label: "Deactivate (do NOT delete): Advisor: David Edelman" },
       { id: "p1-19", label: "Deactivate (do NOT delete): Former Customer" },
